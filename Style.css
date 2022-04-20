@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,600;0,700;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 *{
  padding: 0;
  margin: 0;
@@ -8,77 +8,88 @@
  
 }
 html{
- font-size: 58.5%;
+ font-size: 53.5%;
  z-index: 1000;
  }
  body{
-   position: static;
+   position:absolute;
    padding: 2rem 9%;
   background: linear-gradient(180deg, #F6FAFD 0%, #FFFFFF 19.4%); 
   }
   header{
-   background: #fff;  
-  height: 7rem;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  display: flex;
-  z-index: 1000;
-  align-items: center;
-  justify-content: space-between;
-  font-family:'Cormorant Garamond', serif;
-  padding: 4rem 12%;
+    position: fixed;
+   height: 6rem;
+   top: 0;
+   left: 0;
+   right: 0;
+   display: flex;
+   z-index: 1000;
+   align-items: center;
+   justify-content: space-between;
+   font-family:'Poppins', sans-serif;
+   padding: 4rem 12%;
+   margin-bottom: 5rem;
+   }
+  header .logo{
+   
+   padding: 1rem 1%;
   }
- header .logo{
+  /* header .logo img{
+   height: 2.3rem;
+   width: 2.3rem
+  } */
+  header .navbar{
+  position: relative;
+  right: 13rem;
+  }
+  header .navbar a{
+    font-weight:600;
+   font-size: 1.6rem;
+   margin: 1rem;
+   color: #4B5D68;
+   transition: all .3s ease-in;
+  }
+  header .navbar a:hover{
+   color: #212353;;
+  }
+  header .navbar a:active{
+   color: #212353;;
+  }
+  header .Request-btn{
+   display: flex;
+   padding:1rem 7%;
+   background: #FFFFFF;
+   box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+    font-size: 1.3rem;
+    font-weight: 500;
+    display: inline-block;
+    padding: .8rem 3rem;
+    cursor: pointer;
+    color: #000;
+    border-radius: 12rem;
   
-  padding: 1rem 1%;
- }
- /* header .logo img{
-  height: 2.3rem;
-  width: 2.3rem
- } */
- header .navbar{
- position: relative;
- right: 13rem;
- }
- header .navbar a{
-   font-weight:600;
-  font-size: 1.6rem;
-  margin: 1rem;
-  color: #4B5D68;
-  transition: all .3s ease-in;
- }
- header .navbar a:hover{
-  color: #212353;;
- }
- header .navbar a:active{
-  color: #212353;;
- }
- header .Request-btn{
-  display: flex;
-  padding:1rem 7%;
-  background: #FFFFFF;
-  box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
-   font-size: 1.3rem;
-   font-weight: 500;
-   display: inline-block;
-   padding: .8rem 3rem;
-   cursor: pointer;
-   color: #000;
-   border-radius: 12rem;
- 
- 
- }
- header .Request-btn i{
-   font-size: 1.7rem;
-   position: relative;
-   left: .6rem;
-   top: .5rem;
-   color: #9C69E2;
-   font-weight: 100;
- }
+  
+  }
+  header .Request-btn i{
+    font-size: 1.7rem;
+    position: relative;
+    left: .6rem;
+    top: .5rem;
+    color: #9C69E2;
+    font-weight: 100;
+  }
+  header #menu-btn{
+    cursor: pointer;
+    border: .1rem groove #fcfaf0;
+    border-radius: .3rem;
+    padding: 1rem;
+    display: none;
+    color: #9C69E2;
+    font-size: 2rem;
+  
+}
  .about{
+
    padding: 2rem 9%;
   margin-bottom:3rem ;
  display: flex;
@@ -110,28 +121,29 @@ align-items: center;
 width: 380px;
 height: 120px;
 color: #4B5D68;;
-font-family:'Cormorant Garamond', serif ;
-font-weight: 700;
+font-family:'Poppins', sans-serif;
+font-weight: 500;
 font-size: 18px;
 line-height: 160%;
-margin-top: 2rem;
+margin-top: 1rem;
 
 }
 
-.about .image{
+ .about .image{
  flex: 1 1 50rem;
 }
 
 .about .image img{
- position: absolute;
-height: 60%;
-width: 50%;
-right: 6rem;
-bottom: 2rem;
+ position: relative;
+height: 80%;
+width: 80%;
+left: 38rem;
+bottom: 19rem;
 
-}
+} 
 .about .btn{
-  font-family: 'Cormorant Garamond', serif;
+  top: 2rem;
+  font-family: 'Poppins', sans-serif;
   font-size: 1.5rem;
   position: relative;
   background: #9C69E2;
@@ -141,13 +153,13 @@ bottom: 2rem;
 }
 .sect{
   justify-content: center;
-  width: 105rem;
-height: 450px;
-left: 6rem;
+  /* width: 105rem; */
+/* height: 350px; */
+/* left: 6rem; */
   position: relative;
   /* padding: 2rem 19%; */
    background: rgba(240, 99, 184, 0.15);
-   top: 14rem;
+   /* top: 4rem; */
    margin-bottom:3rem ;
   display: flex;
   flex-wrap: wrap;
@@ -184,9 +196,9 @@ color: #212353;
 
 }
 .sect .context p{
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 300;
   font-size: 2rem;
   line-height: 160%;
   color: #4B5D68;
@@ -211,7 +223,7 @@ color: #212353;
   align-items: center;
   top: 25rem;
   left: 25rem;
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -275,7 +287,7 @@ color: #212353;
     }
     .features .box-container .box .content h4{
       margin-top: 1rem;
-      font-family:'Cormorant Garamond', serif ;
+      font-family:'Poppins', sans-serif ;
   font-style: normal;
   font-weight: 700;
   font-size: 1rem;
@@ -299,7 +311,7 @@ color: #212353;
     .sect-2{
       justify-content: center;
       width: 105rem;
-    height: 450px;
+    height: 350px;
     left: 5rem;
       position: relative;
       /* padding: 2rem 19%; */
@@ -352,16 +364,16 @@ color: #212353;
     .sect-2 .box-container .card .content 
     {
       position: relative;
-      top: 4rem;
+      top: 2rem;
       left: 2rem;
       padding: 1rem;
     }
     .sect-2 .box-container .card .content h3{
-      font-family: 'Cormorant Garamond', serif;
+      font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 900;
-  font-size: 18px;
-  line-height: 160%;
+  font-size: 16px;
+  line-height: 120%;
   
   align-items: center;
   letter-spacing: 0.005em;
@@ -371,11 +383,11 @@ color: #212353;
   color: #212353;
     }
     .sect-2 .box-container .card .content h6{
-      font-family: 'Cormorant Garamond', serif;
+      font-family: 'Poppins', sans-serif;
       font-style: normal;
       font-weight: 500;
       font-size: .8rem;
-      line-height: 160%;
+      line-height: 130%;
   
       align-items: center;
       letter-spacing: 0.01em;
@@ -384,13 +396,12 @@ color: #212353;
       color: #9C69E2;
     }
     .sect-2 .box-container .card .content p{
-      font-family: 'Cormorant Garamond', serif;
+      font-family: 'Poppins', sans-serif;
   font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 180%;
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 110%;
   color: #4B5D68;
-  font-size: .9rem;
     }
     .sect-2 .Slider{
       position: relative;
@@ -435,7 +446,7 @@ color: #212353;
       font-family: 'Helvetica';
       font-style: normal;
       font-weight: 700;
-      font-size: 5.3rem;
+      font-size: 5rem;
       line-height: 130%;
       
       display: flex;
@@ -474,7 +485,7 @@ color: #212353;
     }
     .footer .buttons .btns{
       
-      font-family: 'Cormorant Garamond', serif;
+      font-family: 'Poppins', sans-serif;
       font-size: 1.5rem;
       right: 2rem;
       position: relative;
@@ -486,7 +497,7 @@ color: #212353;
     .footer h6{
       position: relative;
      bottom: 1rem;
-      font-family:'Cormorant Garamond', serif ;
+      font-family:'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 1.4rem;
@@ -499,15 +510,20 @@ color: #212353;
       padding-top:2rem ;
     }
     .footer .nav-1{
+      font-family:'Poppins', sans-serif;
       display: flex;
       justify-content: space-between;
       padding-top:2rem ;
       font-size: 1.5rem;
     }
+    .footer .nav-1 a{
+      font-size: 1.4rem;
+      color: #4B5D68;
+    }
     .footer .nav a{
       color: #212353;
       font-size: 1.4rem;
-      font-family:'Cormorant Garamond', serif;
+      font-family:'Poppins', sans-serif;
       font-weight: 700;
 
     }
@@ -598,31 +614,73 @@ color: #212353;
  
  
 @media screen and (max-width:990px){
-  .about{
-    padding: 2rem;
+  header #menu-btn{
+    display: initial;
   }
-  .about .image img{
-    width: 60%;
+ 
+  header .navbar{
+    width: 100%;
+      height: 300%;
+      position: absolute;
+      top: 80%;
+      left: 0;
+      right: 0;
+      background: #fc00ff;  
+     background: #9C69E2;
+      border-top: .1rem solid rgba(0, 0, 0, 0.1) ;
+      clip-path: polygon(0 0,100% 0,100% 0, 100% 0,0 0);
+      transition: .5s ease;
+  
+  
+  }
+  
+  header .navbar.active{
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+  header .navbar a{
+    font-size: 1.4rem;
+     color: #fc73b7;
+      margin: 1rem;
+      padding: 1rem;
+      display: block;
+     text-align: center;
+      border-left: 1rem solid #fff;
+      background: white;
+      transition: .4s ease-in;
+      border-radius: .4rem;
+  }
+  header .navbar a:hover{
+      background:#ed89e7;
+      color: #fff;
+      border-left: .5rem solid #faf1fc;
+   
+  
+  }
 
-    top:63rem;
-    right:30rem; 
+ 
+  .about{
+    padding: 1rem;
+  }
+
+  .about .image img{
+    top: 3rem;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    align-items: center;
     } 
   .about .content h3{
     width: 800px;
     
   }
   .about .content p{
-    bottom: 3rem;
     width: 800px;
   }
-  .about .content .btn{
-    bottom: 4rem;
-  }
   .sect{
+    padding: 1rem;
     min-height: 100vh;
     top: 40rem;
-    height: 280px;
-    left: 3rem;
+    /* height: 280px; */
   }
   .features .heading{
     justify-content: center;
@@ -653,13 +711,12 @@ color: #212353;
 }
 .sect-2{
   justify-content: center;
-  width: 90rem;
-height: 300px;
+
 left: 5rem;
   position: relative;
   /* padding: 2rem 19%; */
  background:  #9C69E2;
-   top: 49rem;
+   top: 60rem;
    margin-bottom:3rem ;
   flex-wrap: wrap;
   min-height: 100vh;
@@ -707,12 +764,12 @@ border-radius: 12px;
 .sect-2 .box-container .card .content 
 {
   position: relative;
-  top: 2rem;
+  top: 1rem;
   left: 2rem;
   padding: 1rem;
 }
 .sect-2 .box-container .card .content h3{
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Poppins', sans-serif;
 font-style: normal;
 font-weight: 900;
 font-size: 18px;
@@ -726,7 +783,7 @@ letter-spacing: 0.005em;
 color: #212353;
 }
 .sect-2 .box-container .card .content h6{
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: .8rem;
@@ -739,11 +796,11 @@ color: #212353;
   color: #9C69E2;
 }
 .sect-2 .box-container .card .content p{
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Poppins', sans-serif;
 font-style: normal;
 font-weight: 400;
 font-size: 18px;
-line-height: 180%;
+line-height: 120%;
 color: #4B5D68;
 font-size: .9rem;
 }
@@ -781,8 +838,19 @@ font-size: .9rem;
   color: rgba(255, 255, 255, 0.473);
 }
 }
-  @media screen and (max-width:860px){
-    .sect{
+   /* @media screen and (max-width:860px){
+    .about .content h3{
+      width:650px;
+      
+    }
+    .about .content p{
+      bottom: 3rem;
+      width: 600px;
+    }
+    .about .content .btn{
+      bottom: 4rem;
+    } */
+    /* .sect{
       top: 40rem;
       height: 180px;
       width: 600px;
@@ -813,26 +881,12 @@ font-size: .9rem;
       
       font-size: 1.5rem;
       line-height: 160%;
-     }
-   .about .image img{
-      top:60rem;
-     right:19rem; 
-} 
-.about .content h3{
-  width:700px;
-  
-}
-.about .content p{
-  bottom: 3rem;
-  width: 700px;
-}
-.about .content .btn{
-  bottom: 4rem;
-}
+     } */
+
 .sect-2 .box-container .card .content h6{
   width: 80px;
 }
-}
+
 
 @media screen and (max-width:690px){
 
@@ -840,11 +894,13 @@ font-size: .9rem;
    font-size: 39%;
  }
  header .navbar{
-   right: 6rem;
- }
+  right: 6rem;
+}
  .about .image img{
-  top:60rem;
- right:15rem; 
+   height: 80%;
+   width: 80%;
+   top:-7rem; 
+ right:6rem; 
 } 
 .about .content h3{
 width:500px;
@@ -859,7 +915,7 @@ bottom: 4rem;
 }
 .sect{
   top: 40rem;
-  height: 120px;
+  /* height: 120px; */
   width: 450px;
   left: 5rem;
 }
@@ -898,9 +954,9 @@ top: 50rem;
 }
 .features .box-container .box .images .img-1{
   top: 8rem;
-  left: 12rem;
+  left: 18rem;
   height: 30%;
-  width: 25%;
+  width: 30%;
 }
 .features .box-container .box .images .content h5{
   line-height:160%;
@@ -944,31 +1000,31 @@ font-size: 1rem;
 }
 @media screen and (max-width:480px){
   html{
-    font-size: 32%;
+    font-size: 29%;
   }
   
   .about .image img{
-    height: 25%;
-    width: 40%;
-    top:80rem;
-   right:19rem; 
+    height: 70%;
+    width: 70%;
+    left: 5rem;
+    top: -7rem;
   } 
   .about .content h3{
-  width:330px;
+  width:300px;
   
   }
   .about .content p{
   bottom: 3rem;
-  width: 530px;
+  width: 300px;
   }
-  .about .content .btn{
-  bottom: 4rem;
-  }
+   .about .content .btn{
+  top:12rem;
+  } 
   .sect{
-    border-radius: 1rem;
-padding: 2rem;
+    border-radius: 2rem;
+padding: .9rem;
     top: 20rem;
-    height: 100px;
+    /* height: 100px; */
     width: 380px;
     left: 3rem;
   }
